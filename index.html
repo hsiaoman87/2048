@@ -47,10 +47,16 @@
     h1.title {
       font-size: 70px;
     }
-    .login-wrapper {
+    .fb-wrapper {
       clear: both;
       text-align: center;
       padding-top: 20px;
+    }
+    .fb-wrapper .fb-login-button {
+      float: left;
+    }
+    .fb-wrapper .fb-like {
+      float: right;
     }
   </style>
 </head>
@@ -75,8 +81,9 @@
     <div class="above-game">
       <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p>
       <a class="restart-button">New Game</a>
-      <div class="login-wrapper">
+      <div class="fb-wrapper">
         <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="true" data-auto-logout-link="true" scope="user_photos,friends_photos" onlogin="onLogin"></div>
+        <div class="fb-like" data-href="http://hsiaoman87.github.io/2048/" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"></div>
       </div>
     </div>
 
